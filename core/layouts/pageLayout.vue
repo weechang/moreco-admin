@@ -54,7 +54,6 @@
 
     .content.mobile {
         padding-left: 0;
-        margin: 0;
     }
 
     .content-view {
