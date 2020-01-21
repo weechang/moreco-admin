@@ -104,7 +104,7 @@
         top: 0;
         right: 0;
         width: calc(100% - 256px);
-        z-index: 9;
+        z-index: 99;
         transition: all ease-in-out 200ms;
     }
 
