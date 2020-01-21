@@ -44,7 +44,7 @@
     .content {
         height: 100%;
         padding-left: 256px;
-        padding-top: 64px;
+        margin-top: 64px;
         transition: all ease-in-out 200ms;
     }
 

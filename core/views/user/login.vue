@@ -43,7 +43,7 @@
                     <a href="https://github.com/weechang" target="_blank">
                         <a-icon class="item-icon" type="github"></a-icon>
                     </a>
-                    <a href="https://github.com/weechang/morecoAdmin" target="_blank">MorecoAdmin</a>
+                    <a href="https://github.com/weechang/moreco-admin" target="_blank">MorecoAdmin</a>
                 </div>
                 <div class="copyright">Copyright &copy; 2019 耒耒耒耒耒</div>
             </div>

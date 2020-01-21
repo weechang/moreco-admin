@@ -4,6 +4,7 @@ define(function (require, exports, module) {
     let CONSTANT = require('@/store/constant');
     let local = require('@/utils/localStorage');
     let store = require('@/store/store');
+    let router = require('@/routers/router');
     let _axios = require('@/utils/axios');
     require("https://cdn.bootcss.com/qs/6.7.0/qs.min.js");
 
@@ -67,7 +68,9 @@ define(function (require, exports, module) {
             local.set(CONSTANT.ACCESS_TOKEN, token);
         }
         if (res.data.code === 401) {
-            window.location.href = 'http://localhost:63343/MorecoAdminPlus/#/login'
+            router.push({
+                path: `/login/`,
+            });
         }
         return res.data;
     }, err);
