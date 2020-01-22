@@ -1,8 +1,8 @@
 define(function (require, exports, module) {
     "use strict";
     // getters
-    let local = require('@/utils/localStorage');
-    let CONSTANT = require('@/store/constant');
+    let local = require('@/utils/localStorage.js');
+    let CONSTANT = require('@/store/constant.js');
 
     const getters = {
         foldMenu: state => state.app.foldMenu,

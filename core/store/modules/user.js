@@ -2,10 +2,9 @@ define(function (require, exports, module) {
     "use strict";
     // user
 
-    let local = require('@/utils/localStorage');
-    let CONSTANT = require('@/store/constant');
-    let RESOURCE_API = require('@/api/resource');
-    let USER_API = require('@/api/user');
+    let local = require('@/utils/localStorage.js');
+    let CONSTANT = require('@/store/constant.js');
+    let USER_API = require('@/api/user.js');
 
     const user = {
         state: {

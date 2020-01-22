@@ -6,14 +6,16 @@ define(function (require, exports, module) {
     require('npm/vconsole@3.3.4/dist/vconsole.min.js');
     require('npm/vue-dash-event@1.0.1/dist/index.min.js');
     Vue.use(window['vue-dash-event']);
-    require('@/utils/device');
-    require('@/routers/interceptor');
+    require('@/utils/device.js');
+    require('@/routers/interceptor.js');
 
-    let request = require('@/utils/request');
+    require('@/components/charts/chartsAll.js');
+
+    let request = require('@/utils/request.js');
     Vue.use(request.installer);
 
-    let router = require('@/routers/router');
-    let store = require('@/store/store');
+    let router = require('@/routers/router.js');
+    let store = require('@/store/store.js');
     const { LocaleProvider, locales } = window.antd;
 
     new Vue({

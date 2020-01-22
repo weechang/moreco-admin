@@ -7,8 +7,9 @@
             <global-header></global-header>
             <!-- layout content -->
             <a-layout-content :class="['content', (device === 'mobile' ? 'mobile' : (collapsed ? 'collapsed' : ''))]">
+                <!--page header-->
                 <transition name="page-transition">
-                    <router-view :class="['content-view', (device === 'mobile' ? 'mobile' : '')]"/>
+                    <router-view class="content-view"/>
                 </transition>
                 <!-- layout footer -->
                 <a-layout-footer>
@@ -25,7 +26,6 @@
             "global-sider": httpVueLoader('core/components/globalSider.vue'),
             "global-header": httpVueLoader('core/components/globalHeader.vue'),
             "global-footer": httpVueLoader('core/components/globalFooter.vue'),
-            "page-header": httpVueLoader('core/components/pageHeader.vue')
         },
         computed: {
             device() {
@@ -42,7 +42,7 @@
     .content {
         height: 100%;
         padding-left: 256px;
-        padding-top: 64px;
+        margin-top: 64px;
         transition: all ease-in-out 200ms;
     }
 
@@ -52,16 +52,11 @@
 
     .content.mobile {
         padding-left: 0;
-        margin: 0;
     }
 
     .content-view {
         margin: 24px 24px 0;
-        min-height: calc(100vh - 64px - 98px - 24px);
-    }
-
-    .content-view.mobile {
-        min-height: calc(100vh - 64px - 98px - 126px);
+        min-height: calc(100vh - 190px);
     }
 
     .page-transition-enter {

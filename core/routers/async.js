@@ -8,6 +8,20 @@ define(function (require, exports, module) {
 
     let asyncRouterMap = [
         {
+            path: '/demo/views/dashboard',
+            component: blankLayout,
+            children: [
+                {
+                    meta: {
+                        menuItem: true
+                    },
+                    path: 'analysis',
+                    name: '数据分析',
+                    component: httpVueLoader('demo/views/dashboard/analysis.vue')
+                }
+            ]
+        },
+        {
             path: '/upms/views/app',
             component: pageLayout,
             children: [

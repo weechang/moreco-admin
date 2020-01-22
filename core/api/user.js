@@ -1,7 +1,7 @@
 define(function (require, exports, module) {
     "use strict";
 
-    let axios = require('@/utils/request').service;
+    let axios = require('@/utils/request.js').service;
 
     let base = '/';
 

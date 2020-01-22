@@ -2,10 +2,10 @@ define(function (require, exports, module) {
     "use strict";
     // 路由
 
-    let router = require('@/routers/router');
-    let store = require('@/store/store');
-    let request = require('@/utils/request');
-    let domUtil = require("@/utils/domUtil");
+    let router = require('@/routers/router.js');
+    let store = require('@/store/store.js');
+    let request = require('@/utils/request.js');
+    let domUtil = require("@/utils/domUtil.js");
 
     const whiteList = ['/login', '/404'];
     const defaultRoutePath = '/index';

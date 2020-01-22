@@ -7,7 +7,7 @@ define(function (require, exports, module) {
     let fullLayout = httpVueLoader('core/layouts/fullLayout.vue');
     let blankLayout = httpVueLoader('core/layouts/blankLayout.vue');
     let pageLayout = httpVueLoader('core/layouts/pageLayout.vue');
-    let asyncRouterMap = require("@/routers/async");
+    let asyncRouterMap = require("@/routers/async.js");
 
     let basicRouterMap = [
         {

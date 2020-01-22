@@ -2,8 +2,8 @@ define(function (require, exports, module) {
     "use strict";
     // app
 
-    let local = require('@/utils/localStorage');
-    let CONSTANT = require('@/store/constant');
+    let local = require('@/utils/localStorage.js');
+    let CONSTANT = require('@/store/constant.js');
 
     const app = {
         state: {

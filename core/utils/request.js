@@ -1,11 +1,11 @@
 define(function (require, exports, module) {
     "use strict";
 
-    let CONSTANT = require('@/store/constant');
-    let local = require('@/utils/localStorage');
-    let store = require('@/store/store');
-    let router = require('@/routers/router');
-    let _axios = require('@/utils/axios');
+    let CONSTANT = require('@/store/constant.js');
+    let local = require('@/utils/localStorage.js');
+    let store = require('@/store/store.js');
+    let router = require('@/routers/router.js');
+    let _axios = require('@/utils/axios.js');
     require("https://cdn.bootcss.com/qs/6.7.0/qs.min.js");
 
     // 创建 axios 实例

@@ -98,8 +98,6 @@
                     {
                         title: '操作',
                         key: 'action',
-                        width: 135,
-                        fixed: 'right',
                         scopedSlots: {customRender: 'action'},
                     },
                 ],
@@ -191,7 +189,8 @@
         },
         mounted: function () {
             let that = this;
-            seajs.use(['~/upms/api/app', '~/upms/mock/mock'], function (api, mock) {
+            seajs.use(['~/upms/api/app'], (api) => {
+                require('~/upms/mock/mock');
                 that.API = api;
                 that.queryPage();
             });

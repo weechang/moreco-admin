@@ -4,9 +4,9 @@ define(function (require, exports, module) {
 
     require('npm/vuex@3.1.2/dist/vuex.js');
 
-    let app = require('@/store/modules/app');
-    let user = require('@/store/modules/user');
-    let getters = require('@/store/getters');
+    let app = require('@/store/modules/app.js');
+    let user = require('@/store/modules/user.js');
+    let getters = require('@/store/getters.js');
 
     const store = new Vuex.Store({
         modules: {

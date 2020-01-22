@@ -13,7 +13,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ant-design-vue@1.4.8/dist/antd.css"/>
 
     <script src="https://cdn.jsdelivr.net/npm/seajs@3.0.3/dist/sea.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/seajs-css@1.0.5/dist/seajs-css.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/v-charts/lib/index.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/v-charts/lib/style.min.css">
 
     <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/moment.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/locale/zh-cn.js"></script>
@@ -31,7 +36,7 @@
 <script>
     window.moreco = window.moreco || {};
     // 配置项目所在根路径
-    window.moreco.root = 'http://moreco-admin.weechang.xyz/';
+    window.moreco.root = 'http://localhost:63342/moreco-admin/';
     (function () {
         if (!window.moreco.root.endsWith("/")) {
             window.moreco.root = window.moreco.root + '/';
@@ -40,7 +45,7 @@
             base: window.moreco.root,
             paths: {
                 "~": window.moreco.root,
-                "@": window.moreco.root + 'core',
+                "@": window.moreco.root + 'core/',
                 "npm": 'https://cdn.jsdelivr.net/npm/'
             },
             alias: {}

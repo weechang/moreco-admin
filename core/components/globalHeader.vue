@@ -76,7 +76,7 @@
         },
         mounted: function () {
             let that = this;
-            seajs.use('@/api/user', function (api) {
+            seajs.use('@/api/user', (api)=> {
                 that.USER_API = api;
             });
         }

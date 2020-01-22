@@ -3,8 +3,8 @@ define(function (require, exports, module) {
 
     require('npm/enquire.js@2.1.6/dist/enquire.min.js');
 
-    let CONSTANT = require('@/store/constant');
-    let store = require('@/store/store');
+    let CONSTANT = require('@/store/constant.js');
+    let store = require('@/store/store.js');
 
     let deviceEnquire = function (callback) {
         let matchDesktop = {
