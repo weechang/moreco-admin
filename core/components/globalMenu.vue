@@ -11,7 +11,14 @@
                 :default-selected-keys="selectedKeys"
                 @open-change="onOpenChange"
         >
-            <a-sub-menu key="sub1">
+            <a-sub-menu key="demo">
+                <span slot="title">
+                    <a-icon type="mail"></a-icon>
+                    <span>Demo</span>
+                </span>
+                <a-menu-item key="/demo/views/dashboard/analysis"><router-link to="/demo/views/dashboard/analysis">数据分析</router-link></a-menu-item>
+            </a-sub-menu>
+            <a-sub-menu key="upms">
                 <span slot="title">
                     <a-icon type="mail"></a-icon>
                     <span>权限管理</span>
@@ -30,7 +37,7 @@
             return {
                 openKeys: this.$store.getters.openMenuKeys,
                 selectedKeys: this.$store.getters.selectedMenuKeys,
-                rootSubmenuKeys: ['sub1']
+                rootSubmenuKeys: ['demo','upms']
             };
         },
         methods: {
