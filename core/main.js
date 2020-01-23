@@ -14,6 +14,8 @@ define(function (require, exports, module) {
     let request = require('@/utils/request.js');
     Vue.use(request.installer);
 
+    require('@/mock/mock.js');
+
     let router = require('@/routers/router.js');
     let store = require('@/store/store.js');
     const { LocaleProvider, locales } = window.antd;

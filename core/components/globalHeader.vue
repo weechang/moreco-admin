@@ -52,11 +52,13 @@
             },
             doLogout: function () {
                 this.USER_API.logout().then(() => {
+
+                }).finally(()=>{
                     this.$store.dispatch('clearLoginInfo');
                     this.$router.push({
                         path: `/login/`,
                     });
-                })
+                });
             }
         },
         computed: {
