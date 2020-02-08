@@ -45,7 +45,7 @@
                     </a>
                     <a href="https://github.com/weechang/moreco-admin" target="_blank">MorecoAdmin</a>
                 </div>
-                <div class="copyright">Copyright &copy; 2019 耒耒耒耒耒</div>
+                <div class="copyright">Copyright &copy; 2019 末问</div>
             </div>
         </div>
     </div>

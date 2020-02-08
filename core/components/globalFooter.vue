@@ -7,7 +7,7 @@
             </a>
             <a href="https://github.com/weechang/morecoAdmin" target="_blank">MorecoAdmin</a>
         </div>
-        <div class="copyright"> Copyright &copy; 2019 千刀</div>
+        <div class="copyright"> Copyright &copy; 2019 末问</div>
     </div>
 </template>
 
